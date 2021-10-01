@@ -1,3 +1,11 @@
+/*
+Author: Harman Singh
+Date: 2021-10-01
+Description: MY portfolio site
+
+*/
+
+
 // installed 3rd party packages
 let createError = require('http-errors');
 let express = require('express');
@@ -7,6 +15,7 @@ let logger = require('morgan');
 
 let indexRouter = require('./routes/index');
 let usersRouter = require('./routes/users');
+const exp = require('constants');
 
 let app = express();
 
@@ -23,6 +32,7 @@ app.use(express.static(path.join(__dirname, 'node_modules')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
+app.use( express.static("public"));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

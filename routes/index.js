@@ -1,3 +1,12 @@
+/*
+Author: Harman Singh
+Date: 2021-10-01
+Description: MY portfolio site
+
+*/
+
+
+
 var express = require('express');
 var router = express.Router();
 
@@ -29,6 +38,10 @@ router.get('/services', function(req, res, next) {
 /* GET Contact Us page. */
 router.get('/contact', function(req, res, next) {
   res.render('index', { title: 'Contact', page:'contact'});
+});
+/*GET PDF */
+router.get('/HarmanSinghResume.pdf', function(req, res, next) {
+  res.render('index', { title: 'HarmanSinghResume', page:'HarmanSinghResume'});
 });
 
 module.exports = router;

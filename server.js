@@ -1,5 +1,10 @@
 #!/usr/bin/env node
+/*
+Author: Harman Singh
+Date: 2021-10-01
+Description: MY portfolio site
 
+*/
 /**
  * Module dependencies.
  */
@@ -7,6 +12,7 @@
 var app = require('./app');
 var debug = require('debug')('week-4:server');
 var http = require('http');
+const express = require('express');
 
 /**
  * Get port from environment and store in Express.
@@ -88,3 +94,5 @@ function onListening() {
     : 'port ' + addr.port;
   debug('Listening on ' + bind);
 }
+
+app.use( express.static("public"));

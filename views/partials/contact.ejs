@@ -1,14 +1,21 @@
 <div class="container">
     <h1>Welcome to the <strong><%= title %></strong> page</h1>
-    <div class="container">
+    <div class="container bg-dark">
             <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Contact</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Contact Me</h1>
+                <h1 class="display-1 text-uppercase text-info" >Contact Me</h1>
+   
             </div>
-            <div class="row justify-content-center">
+            <div class="row mb-3 ">
+                <div class="text-info col-sm-6 py-2"><h6>Name: <span class="text-white">Harman Singh</span></h6></div>
+                <div class="text-info col-sm-6 py-2"><h6>Phone: <span class="text-white">+1 (778) 323 6931</span></h6></div>
+                <div class="text-info col-sm-6 py-2"><h6>Email: <span class="text-white">hsin1318@my.centennialcollege.ca</span></h6></div>
+                <div class="text-info col-sm-6 py-2"><h6>Fax: <span class="text-white">+1 (778) 323 5424</span></h6></div>
+            </div>
+            <div class="bg-dark row justify-content-center">
                 <div class="col-lg-8">
                     <div class="contact-form text-center">
                         <div id="success"></div>
+                        <h5 class="text-light"> Contact me via Email </h5>
                         <form name="sentMessage" id="contactForm" novalidate="novalidate">
                             <div class="form-row">
                                 <div class="control-group col-sm-6">
@@ -33,9 +40,9 @@
                                     data-validation-required-message="Please enter your message"></textarea>
                                 <p class="help-block text-danger"></p>
                             </div>
-                            <div>
-                                <button class="btn btn-outline-primary" type="submit" id="sendMessageButton">Send
-                                    Message</button>
+                            <div class="container" style="min-height: 30vh;">
+                              
+                                    <a href="/home" class=" btn blue btn-outline-info mr-4" type="submit">Send Message</a>
                             </div>
                         </form>
                     </div>
